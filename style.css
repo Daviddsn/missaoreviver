@@ -344,7 +344,7 @@ a:hover, a:active {
 ----------------------------------*/
 .btn {
     padding: 18px 40px;
-    border: 2px solid #262626;
+    border: 1px solid #262626;
     border-radius: 24px;
     font-size: 14px;
     font-weight: 600;
@@ -391,13 +391,16 @@ a:hover, a:active {
     background: -webkit-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ie10+ */
-    background: linear-gradient(180deg, rgba(0, 81, 255,1) 0%, rgba(0, 153, 255,1) 100%); /* w3c */
+    /* background: linear-gradient(180deg, rgba(0, 81, 255,1) 0%, rgba(0, 153, 255,1) 100%);  */
+    background: rgba(0, 153, 255,1);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
     color: #fff;
 }
 .btn.orange-border:hover,
 .btn.gradient-bg:hover{
-    background: linear-gradient(100deg, rgba(0, 81, 255,1) 0%, rgba(0, 153, 255,1) 100%);
+    border: 1px solid rgba(0, 153, 255,1) ;
+    background:  transparent;
+    color: rgba(0, 153, 255,1);
 }
 
 
@@ -728,6 +731,9 @@ ul.tabs-nav .tab-nav.active {
     font-size: 36px;
     font-weight: 600;
     color: #fff;
+}
+.welcome-content p{
+    text-align: justify;
 }
 
 .welcome-content .entry-title::before {
@@ -1116,83 +1122,15 @@ ul.tabs-nav .tab-nav.active {
     width: 100%;
 }
 
-.about-stats {
-    padding: 96px 0;
-    background: #262626;
-}
-
-.about-stats .circular-progress-bar .circle strong,
-.about-stats .circular-progress-bar .entry-title {
-    color: #fff;
-}
-
-.about-testimonial {
-    padding: 0 0 96px;
-}
-
-.testimonial-cont {
-    margin-top: 96px;
-}
-
-.testimonial-cont,
-.testimonial-cont p {
-    position: relative;
-}
-
-.testimonial-cont::before {
-    content: '“';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 48px;
-    height: 48px;
-    font-size: 48px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    line-height: 1;
-    color: #ff5a00;
-}
-
-.testimonial-cont .entry-content {
-    padding-top: 42px;
-}
-
-.testimonial-cont p {
-    padding-bottom: 32px;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.6;
-    font-style: italic;
-}
-
-.testimonial-cont p::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 64px;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--color-blue-main);
-}
-
-.testimonial-cont .entry-footer img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-
-.testimonial-cont .entry-footer h4 {
-    margin-left: 20px;
+.about-our-missionary h4{
     font-size: 14px;
     font-weight: 600;
     color: #595858;
 }
-
-.testimonial-cont .entry-footer h4 span {
+.about-our-missionary h4 span{
     color: #ff5a00;
 }
+
 
 .help-us {
     padding: 70px 0 96px;
@@ -1606,7 +1544,7 @@ ul.tabs-nav .tab-nav.active {
 
 .pagination a:hover,
 .pagination .active a {
-    color: #ff3900;
+    color: #007bff;
 }
 
 /*--------------------------------------------------------------
