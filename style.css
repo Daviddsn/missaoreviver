@@ -1404,45 +1404,9 @@ ul.tabs-nav .tab-nav.active {
 .portfolio-wrap .mt-48 {
     margin-top: 45px;
 }
-
-.portfolio-wrap .mt-72 {
-    margin-top: 72px;
-}
-
-.portfolio-wrap .portfolio-item {
-    display: none;
-    margin-bottom: 30px;
-}
-
-.portfolio-wrap .portfolio-item.visible {
+.portfolio-wrap .pagination{
     display: block;
 }
-
-.portfolio-cont {
-    margin-bottom: 20px;
-}
-
-.portfolio-cont img {
-    width: 100%;
-}
-
-.portfolio-cont .entry-title {
-    margin-top: 12px;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.portfolio-cont .entry-title a {
-    color: #262626;
-}
-
-.portfolio-cont h4 {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #ff5a00;
-}
-
 /*--------------------------------------------------------------
 # News
 --------------------------------------------------------------*/
@@ -1469,9 +1433,11 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .news-content .entry-header {
-    margin-top: 34px;
+    margin-top: 5px;
 }
-
+.news-content > .entry-header{
+    margin-bottom: 34px;
+}
 .news-content .entry-header .header-elements,
 .news-content .donate-icon  {
     margin-top: 30px;
@@ -1521,7 +1487,9 @@ ul.tabs-nav .tab-nav.active {
     font-size: 14px;
     color: #929191;
 }
-
+.news-content .entry-content p {
+    margin: 20px 0;
+}
 .news-content .entry-footer {
     margin-top: 56px;
 }
